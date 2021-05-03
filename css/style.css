@@ -1,0 +1,341 @@
+*{
+    font-family: arial, tahoma;
+    transition: all .5s
+}
+body{
+    min-height: 1000px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*Start Top Bart*/
+.top-bart{
+    background-color: #08526d;
+    padding: 10px 0;
+    color: #aaa
+}
+.top-bart .row{
+    justify-content: center;
+    align-items: center;
+}
+.top-bart .email{
+    color:#fff
+}
+.top-bart .bu{
+    margin-left: 20px;
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #ec1c23;
+}
+@media (max-width: 576px){
+    .top-bart {
+        padding: 15px 0;
+    }
+    .top-bart .row > div:first-of-type{
+        margin-bottom: 10px;
+    }
+    .top-bart .bu{
+        border: none;
+    }
+}
+/*End Top Bart*/
+/*Start Navigation*/
+@media (max-width: 575px) {
+    .navbar .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.navbar .navbar-brand{
+    font-size: 32px;
+}
+.navbar .navbar-brand span:first-of-type{
+    color: #08526d;
+    font-weight: 700
+}
+.navbar .navbar-brand span:last-of-type{
+    color: #ec1c23
+}
+.navbar .navbar-nav li a{
+    color: #777;
+    font-weight: 600;
+    font-size: 19px;
+    padding-left: 20px !important
+}
+.navbar .navbar-nav li.active a{
+    color: #ec1c23 !important
+}
+.navbar button{
+    margin-top: 10px;
+}
+/*End Navigation*/
+/*Start Carousel*/
+.carousel#myslide .carousel-inner .one{
+    background-image: url(../images/slider01.jpg);
+}
+.carousel#myslide .carousel-inner .tow{
+    background-image: url(../images/slider02.jpg);
+}
+.carousel#myslide .carousel-inner .three{
+    background-image: url(../images/slider03.jpg);
+}
+.carousel#myslide .carousel-inner .carousel-item{
+    background-size: cover;
+}
+.carousel#myslide .carousel-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carousel#myslide .carousel-inner h3{
+    position: absolute;
+    left: 100px;
+    z-index: 50;
+    color: #fff;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1.4
+}
+.carousel#myslide .carousel-inner h3 span{
+    background-color: #ec1c23;
+    padding: 8px
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 10
+}
+.carousel-indicators li{
+    height: 5px;
+}
+/*End Carousel*/
+/*Start Features*/
+.feat{
+    padding: 50px;
+}
+.feat i{
+    color: #fff;
+    background-color: #ec1c23;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.feat h3{
+    padding: 10px 0;
+    font-size: 22px;
+    color: #555;
+    font-weight: 600;
+}
+.feat p{
+    color: #555;
+    font-size: 16px;
+}
+/*End Features*/
+/*Start Overview*/
+.overview{
+    padding: 100px;
+    background-color: #eee;
+}
+.overview h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.overview p{
+    margin-bottom: 10px;
+}
+.overview span{
+    display: block;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 1.5rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+.overview button{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #ec1c23;
+    color: #fff;
+    font-weight: 600
+}
+@media (max-width: 992px){
+    .overview h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+/*End Overview*/
+/*Start Work*/
+.work{
+    padding: 100px 0;
+
+}
+.work h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;  
+}
+.work p{
+    margin-bottom: 20px;
+}
+.work ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.work li{
+    padding: 10px 20px;
+    border: 2px solid #08526d;
+    color: #08526d;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.work li:hover , .work li.active{
+    color: #fff;
+    background-color: #ec1c23;
+    border: 2px solid #ec1c23
+}
+.work li:hover{
+    cursor: pointer;
+}
+.work .images .row{
+    margin: 0;
+}
+.work .images .row .col-md{
+    padding: 0
+}
+.work .images .row .col-md img{
+    width: 100%;
+}
+/*End Work*/
+/*Start Latest Post*/
+.latest-post{
+    padding: 0 0 100px 0;
+}
+.latest-post h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;  
+}
+.latest-post p.lead{
+    width: 80%;
+    margin:0 auto 20px auto; 
+}
+.latest-post .card{
+    margin-bottom: 10px;
+}
+.latest-post .card-title{
+    color: #08526d;
+    font-size: 20px;
+}
+.latest-post .card-subtitle{
+    font-weight: 600;
+    color: #999;
+    margin-top: 10px;
+}
+.latest-post a{
+    color: #ec1c23;
+    font-weight: 600
+}
+.latest-post a:hover{
+    text-decoration: none
+}
+/*End Latest Post*/
+/*Start Slider*/
+.testimoun{
+    background-image: url(../images/testimonial.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+.testimoun .container{
+    position: relative;
+    z-index: 20;
+}
+.testimoun .carousel-item .carousel-caption{
+    top: 50%;
+    transform: translateY(-60%);
+}
+.testimoun .carousel-item .carousel-caption h3{
+    margin: 10px 0
+}
+.testimoun .carousel-item .carousel-caption span{
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: inline-block
+}
+/*End Slider*/
+/*Start Pricing Table*/
+.pricing{
+    padding: 100px 0;
+    background-color: #f7f7f7;
+}
+.pricing h2{
+    font-size: 50px;
+    color: #222;
+    font-weight: 600;
+    text-align: center;
+}
+.pricing p{
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    color: #888;
+}
+.table{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 0 0 10px 0;
+}
+.table li{
+    padding: 10px 0;
+}
+.table .title{
+    padding: 30px 0 15px 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #08526d;
+}
+.table .title span{
+    font-size: 16px;
+    color: #aaa;
+    font-weight: 100
+}
+.table .price{
+    color: #08526d;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: #eee;
+    padding: 10px 0;
+}
+.table .price span{
+    font-size: 16px;
+}
+.table .buttom span{
+    padding: 15px 10px;
+    background-color: #ec1c23;
+    color: #fff;
+}
+.table.main .buttom span{
+    background-color: #08526d;
+}
+.table.main{
+    transform: translateY(-15px)
+}
+.table.main .price{
+    background-color: #ec1c23;
+    color: #fff;
+}
+/*End Pricing Table*/
